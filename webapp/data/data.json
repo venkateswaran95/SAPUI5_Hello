@@ -1,0 +1,35 @@
+{
+	"data" : [
+		{
+			"name":"Venkat",
+			"emp_id":"VE4567",
+			"location":"Chennai"
+		},
+		{
+			"name":"Venkat1",
+			"emp_id":"VE3458",
+			"location":"Hyderabad"
+		},
+		{
+			"name":"John",
+			"emp_id":"JO3458",
+			"location":"Bangalore"
+		},
+		{
+			"name":"Eric",
+			"emp_id":"ER4458",
+			"location":"Pune"
+		},
+		{
+			"name":"Natro",
+			"emp_id":"NA4320",
+			"location":"Chennai"
+		},
+		{
+			"name":"Max",
+			"emp_id":"MA3452",
+			"location":"Hyderabad"
+		}
+		
+		]
+}

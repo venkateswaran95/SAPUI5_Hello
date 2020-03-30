@@ -1,0 +1,70 @@
+<mvc:View
+	controllerName="code.appUI5_Hello.controller.View1"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<App id="v_root">
+		<pages>
+			<Page title="Add Employee">
+				<content>
+					<l:VerticalLayout
+						class="sapUiContentPadding"
+						width="100%">
+						<l:content>
+							<Label text="Name" labelFor="name"/>
+							<Input
+								id="name"
+								class="sapUiSmallMarginBottom"
+								type="Text"
+								placeholder="Enter Name"
+								enabled="true"
+								editable="true"/>
+				
+							<Label text="ID" labelFor="emp_id"/>
+							<Input
+								id="emp_id"
+								class="sapUiSmallMarginBottom"
+								type="Text"
+								placeholder="Enter ID"
+								enabled="true"
+								editable="true"/>
+
+							<Label text="Location" labelFor="location"/>
+							<Input
+								id="location"
+								class="sapUiSmallMarginBottom"
+								type="Text"
+								placeholder="Enter Location"
+								enabled="true"
+								editable="true"
+								showValueHelp="true"/>
+							
+								<Button type="Accept"
+										text="Add"
+										press="onPress">
+								</Button>
+								<Button type="Accept"
+										text="Display All"
+										press="displayAll">
+								</Button>
+						</l:content>
+				</l:VerticalLayout>
+			</content>
+		</Page>
+	</pages>
+	</App>
+</mvc:View>
+<!--<mvc:View controllerName="code.appUI5_Hello.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m"
+					 >
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Label text="Enter your Name" labelFor="name"/>
+					<Input id="name" type="Text" class="sapUiSmallMarginBottom" maxLength="50" submit="onEnter" width="40%"></Input>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>-->

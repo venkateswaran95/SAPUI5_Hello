@@ -1,0 +1,57 @@
+<mvc:View
+		controllerName="code.appUI5_Hello.controller.View2"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:c="sap.ui.core"
+		xmlns="sap.m"
+	    height="100%">
+		<App>
+		<pages>
+			
+			
+	<Page
+		title="Centered Title"
+		class="sapUiContentPadding sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+		<content>
+		<Table
+			items="{/data}">
+			<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="Products" level="H2"/>
+				</content>
+			</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column
+					width="12em">
+					<Text text="Employee ID" />
+				</Column>
+				<Column
+					width="12em">
+					<Text text="Employee Name" />
+				</Column>
+				<Column
+					width="12em">
+					<Text text="Location" />
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<Text
+							text="{emp_id}" />
+						<Text
+							text="{name}" />
+						<Text
+							text="{location}" />
+					</cells>
+				</ColumnListItem>
+			</items>	
+		</Table>
+		</content>
+	</Page>
+</pages>
+</App>
+</mvc:View>
