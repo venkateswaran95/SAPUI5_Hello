@@ -15,11 +15,25 @@
 		navButtonPress="onNavBack">
 		<content>
 		<Table
-			items="{/data}">
+			items="{/data}" id="table1">
 			<headerToolbar>
 			<OverflowToolbar>
 				<content>
-					<Title text="Products" level="H2"/>
+					<Title text="Employees" level="H2"/>
+					<ComboBox change="onChange" selectionChange="onChange" id="oComboBox"
+						items="{ path: '/data'}">
+						<c:Item text="{location}" />
+					</ComboBox>
+
+		<Button	text="Filter" press="onSearch" icon="sap-icon://filter"/>
+		<Button	text="Reset" press="onReset" type="Transparent"/>
+		<ToolbarSpacer/>
+
+		<SegmentedButton enabled="false">
+			<Button icon="sap-icon://settings" />
+			<Button icon="sap-icon://settings" />
+			<Button icon="sap-icon://settings" />
+		</SegmentedButton>
 				</content>
 			</OverflowToolbar>
 			</headerToolbar>
