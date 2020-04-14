@@ -52,7 +52,7 @@
 				</Column>
 			</columns>
 			<items>
-				<ColumnListItem>
+				<ColumnListItem type="Navigation" press="handleListItem">
 					<cells>
 						<Text
 							text="{emp_id}" />
